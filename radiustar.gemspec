@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Ruby Radius Library"
   s.email = "pj.davis@gmail.com"
   s.extra_rdoc_files = ["History.txt", "README.rdoc", "templates/default.txt"]
-  s.files = [".gitignore", ".idea/.name", ".idea/.rakeTasks", ".idea/encodings.xml", ".idea/misc.xml", ".idea/modules.xml", ".idea/radiustar.iml", ".idea/scopes/scope_settings.xml", ".idea/vcs.xml", ".idea/workspace.xml", "History.txt", "README.rdoc", "Rakefile", "lib/radiustar.rb", "lib/radiustar/dictionary.rb", "lib/radiustar/dictionary/attributes.rb", "lib/radiustar/dictionary/values.rb", "lib/radiustar/old_hash.rb", "lib/radiustar/packet.rb", "lib/radiustar/radiustar.rb", "lib/radiustar/request.rb", "lib/radiustar/vendor.rb", "radiustar.gemspec", "spec/radiustar_spec.rb", "spec/spec_helper.rb", "spec/value_spec.rb", "templates/default.txt", "templates/dictionary.digium", "templates/dictionary.rfc2865", "templates/gandalf.dictionary", "test/test_radiustar.rb", "version.txt"]
+  s.files = [".gitignore", "History.txt", "README.rdoc", "Rakefile", "lib/radiustar.rb", "lib/radiustar/dictionary.rb", "lib/radiustar/dictionary/attributes.rb", "lib/radiustar/dictionary/values.rb", "lib/radiustar/old_hash.rb", "lib/radiustar/packet.rb", "lib/radiustar/radiustar.rb", "lib/radiustar/request.rb", "lib/radiustar/vendor.rb", "radiustar.gemspec", "spec/radiustar_spec.rb", "spec/spec_helper.rb", "spec/value_spec.rb", "templates/default.txt", "templates/dictionary.digium", "templates/dictionary.rfc2865", "templates/gandalf.dictionary", "test/test_radiustar.rb", "version.txt"]
   s.homepage = "http://github.com/pjdavis/radiustar"
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
