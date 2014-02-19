@@ -132,10 +132,14 @@ module Radiustar
     end
 
     def recv_packet(timeout)
-      if select([@socket], nil, nil, timeout.to_i) == nil
-        raise "Timed out waiting for response packet from server"
+      begin
+        data = @socket.read_nonblock(4096)  # rfc2865 max packet length
+      rescue IO::WaitReadable
+        if select([@socket], nil, nil, timeout.to_i) == nil
+          raise "Timed out waiting for response packet from server"
+        end
+        retry
       end
-      data = @socket.recvfrom(4096) # rfc2865 max packet length
       Packet.new(@dict, Process.pid & 0xff, data[0])
     end
 
